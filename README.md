@@ -12,3 +12,23 @@ In this case study, I will perform typical actions of a junior data analyst work
 * Share
 * Act
 
+### Shortcuts
+
+
+## Background
+
+
+
+## Ask
+
+
+## Prepare
+
+
+## Process
+
+## Analyse
+
+## Share
+
+## Act
