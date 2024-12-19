@@ -2,7 +2,7 @@
 
 DROP TABLE IF EXISTS `alien-cedar-441716-t6.cyclistic.2023_divvy_tripdata`
 
---	combining all 12 months of data from Jan 2023 to Dec 2023 into one single 2023 table  
+-- combining all 12 months of data from Jan 2023 to Dec 2023 into one single 2023 table  
 
 CREATE TABLE IF NOT EXISTS `alien-cedar-441716-t6.cyclistic.2023_divvy_tripdata` AS (
   SELECT * FROM `alien-cedar-441716-t6.cyclistic.202301-divvy-tripdata`
