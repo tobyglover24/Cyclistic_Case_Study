@@ -31,7 +31,7 @@ CREATE TABLE IF NOT EXISTS `alien-cedar-441716-t6.cyclistic.2023_divvy_tripdata`
 )
 
 
--- check the number of rows (5,719,877)
+-- check the number of rows are 5,719,877
 
 SELECT 
     COUNT(*)
