@@ -28,10 +28,26 @@ Cyclistic’s finance analysts have concluded that annual members are much more 
 Moreno has set a clear goal: Design marketing strategies aimed at converting casual riders into annual members. In order to do that, however, the team needs to better understand how annual members and casual riders differ, why casual riders would buy a membership, and how digital media could affect their marketing tactics. Moreno and her team are interested in analysing the Cyclistic historical bike trip data to identify trends.
 
 ## Ask
+### Business Task
+Design marketing strategies aimed at converting casual riders into annual members.
 
+### Focus
+My focus is on how annual members and casual riders use Cyclistic bikes differently.
+
+The future marketing program will also answer:
+* Why would casual riders by Cyclistic annual memberships?
+* How can Cyclistic use digital media to influence casual riders to become members?
+
+For now, this analysis will only focus on analysis between members and casual riders on their cycling patterns.
 
 ## Prepare
+### Data Source
+This analysis will use Cyclistic's historical trip data from Jan 2023 to Dec 2023. The 12 months of Cyclistic trip data can be downloaded from [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html) (the data has been made available by Motivate International Inc. under [this license](https://divvybikes.com/data-license-agreement)
 
+This is public data for exploratory analysis. There is no access to rider's personally identifiable information, meaning that you won’t be able to connect pass purchases to credit card numbers to determine if casual riders live in the Cyclistic service area or if they have purchased multiple single passes.
+
+### Data Organisation
+Each of the 12 files are named YYYYMM-divvy-tripdata depending on the year and month that the data corresponds with. A file includes the following information for each ride (_column names_); a unique ride ID (_ride_id_), bike type (_rideable_type_), start time (_started_at_), end time (_ended_at_), start station info (_start_station_name, start_station_id, start_lat, start_lng_), end station info (_end_station_name, end_station_id, end_lat, end_lng_) rider type (_member_casual_).
 
 ## Process
 
