@@ -2,6 +2,7 @@
 
 DROP TABLE IF EXISTS `alien-cedar-441716-t6.cyclistic.cleaned_2023_tripdata`
 
+ 
 -- create new table with cleaned data
 
 CREATE TABLE IF NOT EXISTS `alien-cedar-441716-t6.cyclistic.cleaned_2023_tripdata`
@@ -49,7 +50,8 @@ CREATE TABLE IF NOT EXISTS `alien-cedar-441716-t6.cyclistic.cleaned_2023_tripdat
     end_lat IS NOT NULL AND
     end_lng IS NOT NULL AND
     ride_length > 1 AND ride_length < 1440
-);
+)
+
 
 
 -- set ride_id as primary key
@@ -58,8 +60,13 @@ ALTER TABLE `alien-cedar-441716-t6.cyclistic.cleaned_2023_tripdata`
 ADD PRIMARY KEY (ride_id) NOT ENFORCED
 
 
+ 
 -- count number of rows
 
 SELECT 
   COUNT(*) AS no_of_rows
-FROM `alien-cedar-441716-t6.cyclistic.cleaned_2023_tripdata`	-- 4243432 rows - removed 1476445 rows
+FROM `alien-cedar-441716-t6.cyclistic.cleaned_2023_tripdata`	-- 4,243,432 rows (removed 1,476,445 rows)
+
+
+
+
