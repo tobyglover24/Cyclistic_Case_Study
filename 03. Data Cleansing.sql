@@ -8,8 +8,7 @@ DROP TABLE IF EXISTS `alien-cedar-441716-t6.cyclistic.cleaned_2023_tripdata`
 CREATE TABLE IF NOT EXISTS `alien-cedar-441716-t6.cyclistic.cleaned_2023_tripdata`
  AS (
   SELECT 
-    a.ride_id, rideable_type, started_at, ended_at, 
-    ride_length,
+    a.ride_id, rideable_type, started_at, ended_at, trip_duration,
     CASE EXTRACT(DAYOFWEEK FROM started_at) 
       WHEN 1 THEN 'SUN'
       WHEN 2 THEN 'MON'
@@ -40,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `alien-cedar-441716-t6.cyclistic.cleaned_2023_tripdat
     SELECT ride_id, (
       EXTRACT(HOUR FROM (ended_at - started_at)) * 60 +
       EXTRACT(MINUTE FROM (ended_at - started_at)) +
-      EXTRACT(SECOND FROM (ended_at - started_at)) / 60) AS ride_length
+      EXTRACT(SECOND FROM (ended_at - started_at)) / 60) AS trip_duration
     FROM `alien-cedar-441716-t6.cyclistic.2023_divvy_tripdata`
   ) b 
   ON a.ride_id = b.ride_id
