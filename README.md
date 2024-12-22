@@ -66,19 +66,49 @@ See SQL Query: [02. Data Exploration](https://github.com/tobyglover24/GDA_CS1_Cy
 Before cleaning and analysis, I will explore the data to understand the data I'm working with and highlight any inconsistencies that need to be addressed when cleaning the data.
 
 **Observations:** 
-1. The column names and data types are shown below - ***ride_id*** is our primary key as it uniquely identifies each row.
-
+1. **Data Types** - the column names and data types are shown below - ***ride_id*** is our primary key as it uniquely identifies each row.
 <img width="464" alt="image" src="https://github.com/user-attachments/assets/c0b3bb61-76fd-4af2-b85f-07659a60d9e2" />
 
+2. **Null Values** - nulls appear in 6 of the 13 columns. Specifically in the station information and ending location. Further testing is needed to find any relationship between the nulls.
+<img width="1069" alt="image" src="https://github.com/user-attachments/assets/0684b2fc-e6d7-4e3c-b334-fd7db227bc1a" />
 
 
+3. **Duplicate Values** - _ride_id_ is our primary key in this table. It must be unique for each row, meaning there must be no duplicates in this column. No need for cleaning as there are **no duplicates** in the _ride_id_ column.
 
+4. **_ride_id_ length** - all values are 16 characters in length. No need for cleaning.
 
+5. **Types of Bike** - there are 3 unique types of bike (_rideable_type_).
+<img width="388" alt="image" src="https://github.com/user-attachments/assets/95269227-5a20-486e-bdc4-9aa55d2d4a7c" />
 
+6. **Trip Duration** - to find the trip duration, we can use the _started_at_ and _ended_at_ timestamps to create a new column; ***trip_duration***, by extracting the number of minutes between the start and end timestamp. ***day_of_week*** and ***month*** columns will also be created by extracting the relevant information when cleaning, to support analysis.
 
-## Analyse
+The 149,615 trips less than a minute and 6418 trips longer than a day will be removed when cleaning to ensure data integrity.
 
+7. **Null Station Information**
+START - 875,848 rows are missing either the start station name or id. There are 0 rows that are missing only the start station name when the station id is not null. Therefore, we can remove all the rows with nulls in the start station name when cleaning, as these are rows that are missing both start name and id.
 
-## Share
+END - 929,343 rows are missing either the end station name or id. There are 0 rows that are missing only the end station name when the station id is not null. Therefore, we can remove all the rows with nulls in the end station name when cleaning, as these are rows that are missing both end name and id.
+
+LAT/LNG - 6990 rows have both _end_lat_ and _end_lng_ missing. These will need to be removed.
+
+8. **Member Types** - there are 2 unique types of member (_member_casual_)
+<img width="386" alt="image" src="https://github.com/user-attachments/assets/38171774-659f-4071-aebd-eedd0d8f3ead" />
+
+9. **Remove Columns** - we will remove invaluable columns to improve data integrity. Both the _start_station_id_ and _end_station_id_ columns will be removed as they are not needed for analysis.
+
+### Data Cleansing
+See SQL Query: [03. Data Cleansing](https://github.com/tobyglover24/GDA_CS1_Cyclistic/blob/main/03.%20Data%20Cleansing.sql)
+
+The steps to create a clean table for analysis:
+* Remove nulls - all rows with nulls in _start_station_name, end_station_name, end_lat, end_lng_ are removed.
+* Remove extremes - all trips that are less than a minute or longer than a day in duration are removed.
+* Add columns - _trip_duration, month, day_of_week_ are added.
+
+In total, 1,476,445 rows are removed.
+
+## Analyse & Share
+See SQL Query: [04. Data Analysis](https://github.com/tobyglover24/GDA_CS1_Cyclistic/blob/main/04.%20Data%20Analysis.sql)
+
+See Data Visualisation: Tableau Visualisations
 
 ## Act
