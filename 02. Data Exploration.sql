@@ -56,7 +56,7 @@ FROM `alien-cedar-441716-t6.cyclistic.2023_divvy_tripdata`
 WHERE 
   ((EXTRACT(HOUR FROM (ended_at - started_at))) * 60 +
   (EXTRACT(MINUTE FROM (ended_at - started_at))) +
-  (EXTRACT(SECOND FROM (ended_at - started_at))) / 60) < 1		-- 151069 rides less than a minute long
+  (EXTRACT(SECOND FROM (ended_at - started_at))) / 60) < 1		-- less than a minute - 151,069 rows
 
 
   
@@ -66,7 +66,7 @@ FROM `alien-cedar-441716-t6.cyclistic.2023_divvy_tripdata`
 WHERE 
   ((EXTRACT(HOUR FROM (ended_at - started_at))) * 60 +
   (EXTRACT(MINUTE FROM (ended_at - started_at))) +
-  (EXTRACT(SECOND FROM (ended_at - started_at))) / 60) > 1440	-- 6418 rides longer than a day
+  (EXTRACT(SECOND FROM (ended_at - started_at))) / 60) > 1440	-- longer than a day - 6,418 rows
 
   
 
@@ -75,7 +75,7 @@ WHERE
 SELECT 
   COUNT (ride_id) AS rows_missing_start_station_info
 FROM `alien-cedar-441716-t6.cyclistic.2023_divvy_tripdata`
-WHERE start_station_name IS NULL OR start_station_id IS NULL 		-- 875848 rows missing some start information
+WHERE start_station_name IS NULL OR start_station_id IS NULL 		-- missing some start station info - 875,848 rows
 
 SELECT 
   COUNT (ride_id) AS missing_start_name
@@ -88,7 +88,7 @@ WHERE start_station_name IS NULL AND start_station_id IS NOT NULL	-- 0 rows miss
 SELECT 
   COUNT (ride_id) AS rows_missing_end_station_info
 FROM `alien-cedar-441716-t6.cyclistic.2023_divvy_tripdata`
-WHERE end_station_name IS NULL OR end_station_id IS NULL		-- 929343 rows missing some end information
+WHERE end_station_name IS NULL OR end_station_id IS NULL		-- missing some end station info - 929,343 rows 
 
 SELECT 
   COUNT (ride_id) AS missing_end_name
