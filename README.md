@@ -95,7 +95,6 @@ LAT/LNG - 6990 rows have both _end_lat_ and _end_lng_ missing. These will need t
 8. **Member Types** - there are 2 unique types of member (_member_casual_)
 <img width="386" alt="image" src="https://github.com/user-attachments/assets/38171774-659f-4071-aebd-eedd0d8f3ead" />
 
-9. **Remove Columns** - we will remove invaluable columns to improve data integrity. Both the _start_station_id_ and _end_station_id_ columns will be removed as they are not needed for analysis.
 
 ### Data Cleansing
 See SQL Query: [03. Data Cleansing](https://github.com/tobyglover24/GDA_CS1_Cyclistic/blob/main/03.%20Data%20Cleansing.sql)
@@ -103,6 +102,7 @@ See SQL Query: [03. Data Cleansing](https://github.com/tobyglover24/GDA_CS1_Cycl
 The steps to create a clean table for analysis:
 * Remove nulls - all rows with nulls in _start_station_name, end_station_name, end_lat, end_lng_ are removed.
 * Remove extremes - all trips that are less than a minute or longer than a day in duration are removed.
+* Remove columns - unnecessary columns _start_station_id_ and _end_station_id_ are removed.
 * Add columns - _trip_duration, month, day_of_week_ are added.
 
 In total, 1,476,445 rows are removed.
