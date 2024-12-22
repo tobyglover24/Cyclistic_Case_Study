@@ -55,7 +55,6 @@ This analysis will use BigQuery for analysis due to its ability to handle large 
 ### Data Combination
 See SQL Query: [01. Data Combination](https://github.com/tobyglover24/GDA_CS1_Cyclistic/blob/main/01.%20Data%20Combination.sql)
 
-**Output:** 
 In the Cyclistic dataset, 12 csv files representing each month of 2023 are uploaded and joined into one table - _2023_divvy_tripdata_
 
 There are 5,719,877 rows in this table
