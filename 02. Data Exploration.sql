@@ -1,6 +1,15 @@
 -- DATA EXPLORATION -- 
 
 
+-- explore the data types of all columns
+
+SELECT 
+  column_name,
+  data_type 
+FROM `alien-cedar-441716-t6.cyclistic.INFORMATION_SCHEMA.COLUMNS`
+WHERE table_name = '2023_divvy_tripdata'
+
+
 --  null values - check if any exist
 
 SELECT 
