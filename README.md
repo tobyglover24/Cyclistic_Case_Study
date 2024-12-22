@@ -69,6 +69,7 @@ Before cleaning and analysis, I will explore the data to understand the data I'm
 1. **Data Types** - the column names and data types are shown below - ***ride_id*** is our primary key as it uniquely identifies each row.
 <img width="464" alt="image" src="https://github.com/user-attachments/assets/c0b3bb61-76fd-4af2-b85f-07659a60d9e2" />
 
+
 2. **Null Values** - nulls appear in 6 of the 13 columns. Specifically in the station information and ending location. Further testing is needed to find any relationship between the nulls.
 <img width="1069" alt="image" src="https://github.com/user-attachments/assets/0684b2fc-e6d7-4e3c-b334-fd7db227bc1a" />
 
