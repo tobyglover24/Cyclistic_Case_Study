@@ -50,8 +50,34 @@ This is public data for exploratory analysis. There is no access to rider's pers
 Each of the 12 files are named YYYYMM-divvy-tripdata depending on the year and month that the data corresponds with. A file includes the following information for each ride (_column names_); a unique ride ID (_ride_id_), bike type (_rideable_type_), start time (_started_at_), end time (_ended_at_), start station info (_start_station_name, start_station_id, start_lat, start_lng_), end station info (_end_station_name, end_station_id, end_lat, end_lng_) rider type (_member_casual_).
 
 ## Process
+This analysis will use BigQuery for analysis due to its ability to handle large datasets. Microsoft Excel is impractical as it cannot handle datasets with over 1,048,576 rows (our data will have more rows). Other tools like R Studio are suitable but we will use BigQuery here.
+
+### Data Combination
+See SQL Query: [01. Data Combination](https://github.com/tobyglover24/GDA_CS1_Cyclistic/blob/main/01.%20Data%20Combination.sql)
+
+**Output:** 
+In the Cyclistic dataset, 12 csv files representing each month of 2023 are uploaded and joined into one table - _2023_divvy_tripdata_
+
+There are 5,719,877 rows in this table
+
+### Data Exploration
+See SQL Query: [02. Data Exploration](https://github.com/tobyglover24/GDA_CS1_Cyclistic/blob/main/02.%20Data%20Exploration.sql)
+
+Before cleaning and analysis, I will explore the data to understand the data I'm working with and highlight any inconsistencies that need to be addressed when cleaning the data.
+
+**Observations:** 
+1. The column names and data types are shown below - ***ride_id*** is our primary key as it uniquely identifies each row.
+
+<img width="464" alt="image" src="https://github.com/user-attachments/assets/c0b3bb61-76fd-4af2-b85f-07659a60d9e2" />
+
+
+
+
+
+
 
 ## Analyse
+
 
 ## Share
 
