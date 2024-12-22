@@ -65,7 +65,7 @@ FROM `alien-cedar-441716-t6.cyclistic.2023_divvy_tripdata`
 WHERE 
   ((EXTRACT(HOUR FROM (ended_at - started_at))) * 60 +
   (EXTRACT(MINUTE FROM (ended_at - started_at))) +
-  (EXTRACT(SECOND FROM (ended_at - started_at))) / 60) < 1		-- less than a minute - 151,069 rows
+  (EXTRACT(SECOND FROM (ended_at - started_at))) / 60) < 1		-- less than a minute - 149,615 rows
 
 
   
