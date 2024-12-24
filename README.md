@@ -132,7 +132,20 @@ After loading our clean dataset into Tableau, we can produce insights from our v
 
 
 
-
 ## Act
 
+The overall business task of this piece was to design marketing strategies aimed at converting casual riders into annual members, by looking into the differences in ride habits between members and casuals.
 
+After analysing the 2023 Cyclistic trip data, these are the following marketing strategies that would potentially be worth looking into.
+
+### Marketing Recommendations
+1. Run all advertising campaings aimed at casuals along the Chicago coast-line - casual riders are typically starting and ending along the coast-line, so any marketing to convert them to members would be seen the most along the coast-line.
+2. Make casuals more aware that Cyclistic bikes can be used as a form of transport to and from work - marketing campaigns need to highlight that this is an eco-friendly way to travel to and from work. If casuals understand this and make this a primary transport mode, this will hopefully convert them to members if they're using the bikes daily.
+3. Offer mid-week discounts - we know that bikes are most popular at weekends for casuals, but for members ridership is higher in the week. Offering incentives to ride uring the week could help casuals realise that bikes are not impractical for them during the week, and they can also use their commutes as daily exercise.
+
+### Next Steps
+Proceed with presenting these findings to stakeholders for feedback and potential strategies of bringing these findings to life. Further breakdown of the most common hotspots/trips by casuals and members could help support marketing strategies.
+
+
+## Thank you!
+Thank you for reading this case study - Toby Glover
