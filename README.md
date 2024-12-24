@@ -109,8 +109,6 @@ In total, 1,476,445 rows are removed.
 ## Analyse & Share
 See SQL Query: [04. Data Analysis](https://github.com/tobyglover24/GDA_CS1_Cyclistic/blob/main/04.%20Data%20Analysis.sql)
 
-See Data Visualisation: Tableau Visualisations
-
 After loading our clean dataset into Tableau, we can produce insights from our visualisations.
 
 ![Ride Type Split](https://github.com/user-attachments/assets/109c66e9-79a3-4f95-8623-f9e46d77942e)
