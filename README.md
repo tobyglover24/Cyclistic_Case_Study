@@ -113,10 +113,24 @@ See Data Visualisation: Tableau Visualisations
 
 After loading our clean dataset into Tableau, we can produce insights from our visualisations.
 
-![Ride Type Split](https://github.com/user-attachments/assets/f1b7d192-63eb-483f-a3bf-8b21ff52726b)
+![Ride Type Split](https://github.com/user-attachments/assets/109c66e9-79a3-4f95-8623-f9e46d77942e)
 **Insight** - In 2023, 64.5% of rides were completed by members. Classic bike was the most popular choice of bike by both casual riders and members. A greater proportion of casual riders chose electric bike (36.9%) compared to members (34.7%).
 
-![Monthly Trend](https://github.com/user-attachments/assets/63666680-3862-4b9d-bc10-36abf4ddb131)
+![Monthly Trend](https://github.com/user-attachments/assets/24e00a9f-4668-4eb9-85f2-bda6177d73ad)
+**Insight** - Member and casual rides follow very similar monthly riding habits, with the number of riders peaking in summer and lowest at the start of the new year. Note that casual rides peaked in July whereas members rides peaked a month later in August
+
+![Hourly Rides by Rider Type](https://github.com/user-attachments/assets/98f78173-43e1-4f65-8976-65141e6efa0a)
+**Insight**
+* CASUAL - Rides by casuals peak on the weekend, where rides are spread across the day mostly from 10am to 6pm. Throughout the week, there are small peaks or rides times at around 7am and 5pm.
+* MEMBER - Rides by members follow much stronger peaks throughout the week, between 7-8am and then again at 4-6pm, around typical work times. Their weekend patterns and volumes are extremely similar to casual riders.
+
+![Start Station Map](https://github.com/user-attachments/assets/4a7c93b9-d31e-4725-98a4-b30c26d9c807)
+**Insight** - Casual riders start their trips mostly along the coastline of Chicago, with the spread of start trips being very focused along the coast. Member ride starts are more spread out across the City, with the most common start stations being more in-land.
+
+![End Station Map](https://github.com/user-attachments/assets/8df20da0-1a84-422a-a836-1f0750047935)
+**Insight** - End stations follow very similar trends to start stations for both casuals and members. Casuals ended their trips most commonly along the coast line of the city, whereas members end stations were more spread across the city, with the number of rides ending peaking at stations further in-land.
+
+
 
 
 ## Act
