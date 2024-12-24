@@ -112,3 +112,5 @@ See SQL Query: [04. Data Analysis](https://github.com/tobyglover24/GDA_CS1_Cycli
 See Data Visualisation: Tableau Visualisations
 
 ## Act
+
+![Ride Type Split](https://github.com/user-attachments/assets/f1b7d192-63eb-483f-a3bf-8b21ff52726b)
