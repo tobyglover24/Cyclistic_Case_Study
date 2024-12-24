@@ -3,7 +3,7 @@
 Course: [Google Data Analytics Capstone: Cyclistic Case Study](https://www.coursera.org/learn/google-data-analytics-capstone) as part of [Google Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-data-analytics)
 
 ## Introduction
-In this case study, I will perform typical actions of a junior data analyst working at a fictional bike-share company, Cyclistic. To complete the overall business task, I will follow the steps of the data analysis process: [Ask](https://github.com/tobyglover24/GDA_CS1_Cyclistic/blob/main/README.md#ask), [Prepare](https://github.com/tobyglover24/GDA_CS1_Cyclistic/blob/main/README.md#prepare), [Process](https://github.com/tobyglover24/GDA_CS1_Cyclistic/blob/main/README.md#process), [Analyse](https://github.com/tobyglover24/GDA_CS1_Cyclistic/blob/main/README.md#analyse--share-1), [Share](https://github.com/tobyglover24/GDA_CS1_Cyclistic/blob/main/README.md#analyse--share-1) and [Act](https://github.com/tobyglover24/GDA_CS1_Cyclistic/blob/main/README.md#act)
+In this case study, I will perform typical actions of a junior data analyst working at a fictional bike-share company, Cyclistic. To complete the overall business task, I will follow the steps of the data analysis process: [Ask](https://github.com/tobyglover24/GDA_CS1_Cyclistic/blob/main/README.md#ask), [Prepare](https://github.com/tobyglover24/GDA_CS1_Cyclistic/blob/main/README.md#prepare), [Process](https://github.com/tobyglover24/GDA_CS1_Cyclistic/blob/main/README.md#process), [Analyse](https://github.com/tobyglover24/GDA_CS1_Cyclistic/blob/main/README.md#analyse--share), [Share](https://github.com/tobyglover24/GDA_CS1_Cyclistic/blob/main/README.md#analyse--share) and [Act](https://github.com/tobyglover24/GDA_CS1_Cyclistic/blob/main/README.md#act)
 
 ### Shortcuts
 
@@ -15,7 +15,7 @@ SQL Queries:
 * [03. Data Cleansing](https://github.com/tobyglover24/GDA_CS1_Cyclistic/blob/main/03.%20Data%20Cleansing.sql)
 * [04. Data Analysis](https://github.com/tobyglover24/GDA_CS1_Cyclistic/blob/main/04.%20Data%20Analysis.sql)
 
-[Data Visualisations](https://github.com/tobyglover24/GDA_CS1_Cyclistic/blob/main/README.md#analyse--share-1)
+[Data Visualisations](https://github.com/tobyglover24/GDA_CS1_Cyclistic/blob/main/README.md#analyse--share)
 
 ## Context
 ### Cyclistic
